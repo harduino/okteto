@@ -6,7 +6,7 @@
 # Golang binary
 cli
 .syncthing*
-bin/*
+#bin/*
 coverage.txt
 coverage.html
 dist

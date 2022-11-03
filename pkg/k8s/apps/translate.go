@@ -61,7 +61,7 @@ func (tr *Translation) translate() error {
 
 	tr.App.ObjectMeta().Annotations[model.AppReplicasAnnotation] = strconv.Itoa(int(replicas))
 	tr.App.ObjectMeta().Labels[constants.DevLabel] = "true"
-	tr.App.SetReplicas(0)
+	// tr.App.SetReplicas(0)
 
 	for k, v := range tr.Dev.Metadata.Annotations {
 		tr.App.ObjectMeta().Annotations[k] = v
